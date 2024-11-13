@@ -1,0 +1,114 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+.out{
+    border: solid 1px;
+    height:160px;
+    display:flex;
+    margin:10px;
+}
+#in1,#in2,#in3{
+    border:solid 1px;
+    height:160px;
+}
+#in1{
+    width:160px;
+}
+#in2{
+    width:1200px;
+    text-align:center;
+    background-color:lightgray;
+}
+#in3{
+    width:320px;
+}
+#clgname{
+    font-size:50px;
+    color:blue;    
+}
+#text1{
+    font-size:25px;
+    color:green;
+}
+#scrolltext{
+    font-size: 20px;
+    color:red;
+    font-weight:bold;
+}
+#navbox{
+    border:solid 1px;
+    height:50px;
+    margin-left: 10px;
+    margin-right:10px;
+
+}
+ul li{
+    border:solid 1px;
+    height:50px;
+    width:180px;
+    float:left;
+    text-align:center;
+    line-height:50px;
+    background-color:lightblue;
+    border-radius:10px;
+    margin-left:5PX;
+}
+ul{
+    list-style: none;
+}
+ul li a{
+    color:white;
+    font-size:20px;
+    text-decoration: none;
+}
+ul li ul li{
+    display:none;
+}
+ul li:hover ul li{
+    display: block;
+}
+ul li:hover{
+    background-color: orange;
+
+}
+.outbox{
+    border:solid 1px hidden;
+    height:400px;
+    margin:10px;
+    display:flex;
+    justify-content: space-between;
+}
+#inbox1,#inbox2,#inbox3{
+    border:solid 1px;
+    height:400px;
+}
+#inbox1{
+    width:700px;
+    background-image:url(clgpic1.jpeg);
+    background-repeat: no-repeat;
+    background-size:700px 400px;
+    animation-name: imgchange;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+}
+@keyframes imgchange{
+    0%{
+        background-image: url(clgpic1.jpeg);
+    }
+    20%{
+        background-image: url(pic4.jpeg);
+    }
+    30%{
+        background-image: url(pic2ku.jpeg);
+    }
+    40%{
+        background-image: url(pic3ku.jpeg);
+    }
+    
+}
+#inbox2,#inbox3{
+    width:350px;
+    text-align:center;
+    color:blue;
+}
